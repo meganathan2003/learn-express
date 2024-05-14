@@ -42,10 +42,6 @@
                 "warn",
                 "Warn about unused variables."
             ],
-            "no-undef": [
-                "error",
-                "Disallow the use of undeclared variables."
-            ],
             "no-dupe-keys": [
                 "error",
                 "Disallow duplicate keys in object literals."
@@ -115,10 +111,6 @@
             "no-throw-literal": [
                 "error",
                 "Avoid throwing literals as exceptions."
-            ],
-            "no-undef-init": [
-                "error",
-                "Avoid initializing variables to undefined."
             ],
             "no-unsafe-negation": [
                 "error",
