@@ -1,0 +1,144 @@
+{
+    "env": {
+        "node": true,
+        "es6": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "ecmaVersion": 2018
+    },
+    "rules": {
+        "semi": [
+            "error",
+            "always"
+        ],
+        "quotes": [
+            "error",
+            "double"
+        ],
+        "rules": {
+            "no-var": [
+                "error",
+                "Avoid using var, use let or const instead."
+            ],
+            "prefer-const": [
+                "error",
+                "Prefer using const for variables that are not reassigned."
+            ],
+            "prefer-template": [
+                "error",
+                "Use template literals instead of string concatenation."
+            ],
+            "no-useless-concat": [
+                "error",
+                "Avoid unnecessary string concatenation."
+            ],
+            "arrow-body-style": [
+                "error",
+                "as-needed",
+                "Use concise arrow function syntax when possible."
+            ],
+            "no-unused-vars": [
+                "warn",
+                "Warn about unused variables."
+            ],
+            "no-undef": [
+                "error",
+                "Disallow the use of undeclared variables."
+            ],
+            "no-dupe-keys": [
+                "error",
+                "Disallow duplicate keys in object literals."
+            ],
+            "no-extra-semi": [
+                "error",
+                "Disallow unnecessary semicolons."
+            ],
+            "no-else-return": [
+                "error",
+                "Avoid else after a return in an if block."
+            ],
+            "no-empty": [
+                "error",
+                "Disallow empty block statements."
+            ],
+            "no-magic-numbers": [
+                "error",
+                {
+                    "ignoreArrayIndexes": true
+                },
+                "Avoid magic numbers."
+            ],
+            "no-implicit-coercion": [
+                "error",
+                {
+                    "boolean": false,
+                    "number": false,
+                    "string": false
+                },
+                "Avoid implicit coercion."
+            ],
+            "no-loop-func": [
+                "error",
+                "Avoid creating functions inside loops."
+            ],
+            "no-new-wrappers": [
+                "error",
+                "Avoid creating new instances of String, Number, and Boolean."
+            ],
+            "no-restricted-properties": [
+                "error",
+                {
+                    "object": "Math",
+                    "property": "pow",
+                    "message": "Avoid using Math.pow. Use the exponentiation operator (**) instead."
+                },
+                {
+                    "object": "console",
+                    "property": "log",
+                    "message": "Avoid using console.log. Use a logger instead."
+                },
+                {
+                    "property": "__dirname",
+                    "message": "Avoid using __dirname. Use import.meta.url instead."
+                }
+            ],
+            "no-shadow": [
+                "error",
+                {
+                    "allow": [
+                        "err"
+                    ]
+                },
+                "Avoid variable shadowing."
+            ],
+            "no-throw-literal": [
+                "error",
+                "Avoid throwing literals as exceptions."
+            ],
+            "no-undef-init": [
+                "error",
+                "Avoid initializing variables to undefined."
+            ],
+            "no-unsafe-negation": [
+                "error",
+                "Avoid negating the left operand of relational operators."
+            ],
+            "no-useless-return": [
+                "error",
+                "Avoid using unnecessary return statements."
+            ],
+            "require-await": [
+                "error",
+                "Require async functions to have an await expression."
+            ],
+            "valid-typeof": [
+                "error",
+                {
+                    "requireStringLiterals": true
+                },
+                "Ensure that the results of typeof are compared against a valid string."
+            ]
+        }
+    }
+}
